@@ -1,0 +1,198 @@
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background-color: #010101;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  padding: 20px;
+  cursor: pointer;
+}
+
+.spinner {
+  height: 80px;
+  margin: auto;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+/* new css for movie component */
+
+* {
+  box-sizing: border-box;
+}
+
+.movies {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  background-color: rgb(112, 112, 112);
+  height: 300%;
+}
+
+.App-header h2 {
+  margin: 0;
+}
+
+.add-movies {
+  text-align: center;
+}
+
+.add-movies button {
+  font-size: 16px;
+  padding: 8px;
+  margin: 0 10px 30px 10px;
+}
+
+.movie {
+
+  width: 400px;
+  height: 700px;
+  background-color:rgba(0, 0, 0, 0.5);
+  margin: 20px;
+  color: rgb(255, 255, 255);
+  border-radius: 10px;
+  
+}
+
+.errorMessage {
+  margin: auto;
+  font-weight: bold;
+  color: rgb(161, 15, 15);
+}
+
+
+.search {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+
+input[type="submit"] {
+  padding: 5px;
+  background-color: transparent;
+  color: black;
+  border: 1px solid black;
+  width: 80px;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+img{
+  width: 400px;
+  height: 430px;
+}
+input[type="submit"]:hover {
+  background-color: #282c34;
+  color: antiquewhite;
+}
+
+
+.search > input[type="text"]{
+  width: 40%;
+  min-width: 170px;
+}
+.btn{
+  display: flex;
+  justify-content: space-around;
+}
+#btn-delete,#btn-edit,#btn-close,#btn-details{
+  width: 80px;
+  height: 40px;
+  font-size: 20px;
+  color: rgb(89, 21, 21);
+}
+#btn-add{
+  width: 200px;
+  height: 40px;
+  font-size: 20px;
+  color: rgb(89, 21, 21);
+}
+#add-movie{
+  width: 400px;
+  height: 600px;
+}
+#div-1{
+  padding:10px;
+  background-color: #949baa;
+  width: 400px;
+  height: 600px;
+  text-align: center;
+  align-items: center;
+}
+.container{
+  display: flex;
+  margin-top: 0px;
+  max-width: 100%;
+  height: 100%;
+  max-height: 80%;
+  align-items: flex-start;
+}
+.container2{
+  position:relative;
+  display:flex;
+  margin: 2.55%;
+  width: 200%;
+  height: 300%; 
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+}
+.col{
+  display:flexbox;
+  justify-items: flex-start;
+  margin-left:-19.5% ;
+  width: 100%;
+  height: 100%;
+  justify-content: flex-start;
+  
+}
+.row{
+  text-align: left;
+  display: block;
+
+}
+ .row-1{
+  display: flex;
+  flex-direction: row;
+  
+}
+.row-1 StarRating{
+  margin-top:10%;
+}
+.row-1 p{/* this will not work without setting position property */
+font-size: 20px;
+margin-top: 2%;
+margin-left: 2%;
+}
+
+
+@media screen and (min-width: 694px) and (max-width: 915px) {
+  .movie {
+    max-width: 33%;
+  }
+}
+
+@media screen and (min-width: 652px) and (max-width: 693px) {
+  .movie {
+    max-width: 50%;
+  }
+}
+
+
+@media screen and (max-width: 651px) {
+  .movie {
+    max-width: 100%;
+    margin: auto;
+  }
+}
